@@ -1,0 +1,632 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title Modern Business - Start Bootstrap Template
+  // Favicon
+  link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+  // Custom Google font
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+  // Bootstrap icons
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet')
+  // Core theme CSS (includes Bootstrap)
+  link(href='css/styles.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css')
+main.flex-shrink-0
+  // Navigation
+  nav.navbar.navbar-expand-lg.navbar-light.bg-white.py-3
+    .container.px-5
+      a.navbar-brand(href='index.html')
+        span.fw-bolder.text-primary Chaouch Hanane
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ms-auto.mb-2.mb-lg-0.small.fw-bolder
+          li.nav-item
+            a.nav-link(href='index.html') Home
+          li.nav-item
+            a.nav-link(href='resume.html') Resume
+          li.nav-item
+            a.nav-link(href='projects.html') Projects
+          li.nav-item
+            a.nav-link(href='contact.html') Contact
+  // Projects Section
+  section.py-5
+    .container.mb-5
+      .text-center.mb-5
+        h1.display-5.fw-bolder.mb-0
+          span.text-gradient.d-inline Projects
+      .row.gx-5.justify-content-center
+        .col-lg-11.col-xl-9.col-xxl-8
+          // Project 1: Logistics Platform
+          .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
+            .card-body.p-0
+              .row.g-0.align-items-center
+                // Image Section for XS and SM screens
+                .col-12.p-4.d-block.d-md-none
+                  img.img-fluid.rounded.w-100(src='assets/img log.jpg' alt='Image 1')
+                // Text Content
+                .col-md-8.p-4
+                  h3.fw-bolder Logistics Platform (2023)
+                  p.text-muted
+                    | Designed and developed a platform to connect shippers and
+                    | freight carriers, optimizing logistics operations and improving service
+                    | efficiency. Led the team in delivering this solution.
+                  p
+                    strong.d-none.d-sm-inline Technologies:
+                    span.badge.bg-gradient-primary-to-secondary Python
+                    span.badge.bg-gradient-primary-to-secondary
+                      | Django REST
+                      | Framework
+                    span.badge.bg-gradient-primary-to-secondary React.js
+                    span.badge.bg-gradient-primary-to-secondary PostgreSQL
+                  p
+                    button.btn.btn-link.text-primary(data-bs-toggle='modal' data-bs-target='#imageModal3')
+                      i.fas.fa-external-link-alt
+                      |                                             View More
+                    button.btn.btn-link.text-primary(data-bs-toggle='modal' data-bs-target='#exampleModal4')
+                      // Updated ID here
+                      i.fas.fa-eye
+                      |  Watch the Demo
+                    #exampleModal4.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                      .modal-dialog.modal-lg
+                        .modal-content
+                          .modal-header
+                            h5#exampleModalLabel.modal-title Demo Logistics Platform
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                          .modal-body
+                            video(controls='' width='100%')
+                              source(src='assets/video_log.mp4' type='video/mp4')
+                              |                                                         Your browser does not support the video tag.
+                          .modal-footer
+                            button.btn.btn-dark(type='button' data-bs-dismiss='modal') Close
+                    //
+                      <a class="btn btn-link" href="http://example.com" target="_blank">
+                      <i class="fas fa-link"></i>
+                      Visit Site
+                      </a>
+                    a.btn.btn-link.text-primary(href='https://github.com/yourusername/project' target='_blank')
+                      i.fab.fa-github
+                      |                                         View on GitHub
+                // Image Section for MD and larger screens
+                .col-md-4.d-none.d-md-block
+                  a.image-link(href='assets/img1.jpg' target='_blank')
+                    .image-wrapper.position-relative
+                      img.img-fluid.rounded(src='assets/img log.jpg' alt='Image 1')
+                      .overlay.position-absolute.top-0.start-0.w-100.h-100.d-flex.justify-content-center.align-items-center.text-white
+                        i.fas.fa-eye
+        // Project 2: E-Recruitment Website and Mobile Application
+        .col-lg-11.col-xl-9.col-xxl-8
+          .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
+            .card-body.p-0
+              .row.g-0.align-items-center
+                // Image Section for XS and SM screens
+                .col-12.p-4.d-block.d-md-none
+                  img.img-fluid.rounded.w-100(src='assets/Employer Home page.png' alt='Image 1')
+                // Text Content
+                .col-md-8.p-4
+                  h3.fw-bolder E-Recruitment Website and Mobile App (2022)
+                  p.text-muted
+                    | Designed and developed an e-Recruitment platform for managing
+                    | the job market. Led a team to deliver a comprehensive solution that connects job
+                    | seekers with employers.
+                  p
+                    strong.d-none.d-sm-inline Technologies:
+                    span.badge.bg-gradient-primary-to-secondary Spring Boot
+                    span.badge.bg-gradient-primary-to-secondary Java
+                    span.badge.bg-gradient-primary-to-secondary Node.js
+                    span.badge.bg-gradient-primary-to-secondary React.js
+                    span.badge.bg-gradient-primary-to-secondary PostgreSQL
+                    span.badge.bg-gradient-primary-to-secondary Docker
+                    span.badge.bg-gradient-primary-to-secondary Kafka
+                  p
+                    button.btn.btn-link.text-primary(data-bs-toggle='modal' data-bs-target='#imageModal')
+                      i.fas.fa-external-link-alt
+                      |                                             View More
+                    a.btn.btn-link(href='http://example.com' target='_blank')
+                      i.fas.fa-link
+                      |                                             Visit Site
+                    a.btn.btn-link.text-primary(href='https://github.com/your-repo/e-recruitment' target='_blank')
+                      i.fab.fa-github
+                      |                                             View on GitHub
+                // Image Section for MD and larger screens
+                .col-md-4.d-none.d-md-block
+                  a.image-link(href='assets/Employer Home page.png' target='_blank')
+                    .image-wrapper.position-relative
+                      img.img-fluid.rounded.left(src='assets/Employer Home page.png' alt='Image 1')
+                      .overlay.position-absolute.top-0.start-0.w-100.h-100.d-flex.justify-content-center.align-items-center.text-white
+                        i.fas.fa-eye
+        // Project 3: Madrasa-Tic Platform
+        .col-lg-11.col-xl-9.col-xxl-8.mb-5
+          .card.overflow-hidden.shadow.rounded-4.border-0
+            .card-body.p-0
+              .row.g-0.align-items-center
+                // Image Section for XS and SM screens
+                .col-12.p-4.d-block.d-md-none
+                  img.img-fluid.rounded.w-100(src='assets/img madrasatic.jpg' alt='Image 1')
+                // Text Content
+                .col-md-8.p-4
+                  h3.fw-bolder Madrasa-Tic Platform (2021)
+                  p.text-muted
+                    | Created a participatory platform for reporting and addressing
+                    | issues to improve the school environment, fostering community engagement.
+                  p
+                  p
+                    strong.d-none.d-sm-inline Technologies:
+                    span.badge.bg-gradient-primary-to-secondary Python
+                    span.badge.bg-gradient-primary-to-secondary Django
+                    span.badge.bg-gradient-primary-to-secondary Dart
+                    span.badge.bg-gradient-primary-to-secondary MySQL
+                  p
+                    button.btn.btn-link.text-primary(data-bs-toggle='modal' data-bs-target='#imageModal2')
+                      i.fas.fa-external-link-alt
+                      |                                             View More
+                    a.btn.btn-link(href='http://example.com' target='_blank')
+                      i.fas.fa-link
+                      |                                             Visit Site
+                    a.btn.btn-link.text-primary(href='https://github.com/yourusername/madrasatic' target='_blank')
+                      i.fab.fa-github
+                      |                                             View on GitHub
+                // Image Section for MD and larger screens
+                .col-md-4.d-none.d-md-block
+                  a.image-link.col-md-4(href='assets/img madrasatic.jpg' target='_blank')
+                    .image-wrapper
+                      img.img-fluid.rounded.mileu(src='assets/img madrasatic.jpg' alt='Image 1')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+        // Project 4: E-Health Mobile Application
+        .col-lg-11.col-xl-9.col-xxl-8.mb-5
+          .card.overflow-hidden.shadow.rounded-4.border-0
+            .card-body.p-0
+              .row.g-0.align-items-center
+                // Image Section for XS and SM screens
+                .col-12.p-4.d-block.d-md-none
+                  img.img-fluid.rounded.w-100(src='assets/img_medcare.jpg' alt='Image')
+                // Text Content
+                .col-md-8.p-4
+                  h3.fw-bolder E-Health Mobile Application (2020)
+                  p.text-muted
+                    | Developed a mobile application for managing medical service
+                    | bookings, enhancing accessibility for patients and healthcare providers.
+                  p
+                    strong.d-none.d-sm-inline Technologies:
+                    span.badge.bg-gradient-primary-to-secondary Java
+                    span.badge.bg-gradient-primary-to-secondary Android Studio
+                    span.badge.bg-gradient-primary-to-secondary Firebase
+                  p
+                    button.btn.btn-link.text-primary(data-bs-toggle='modal' data-bs-target='#imageModal1')
+                      i.fas.fa-external-link-alt
+                      |                                             View More
+                    a.btn.btn-link(href='http://example.com' target='_blank')
+                      i.fas.fa-link
+                      |                                             Visit Site
+                    a.btn.btn-link.text-primary(href='https://github.com/yourusername/madrasatic' target='_blank')
+                      i.fab.fa-github
+                      |                                             View on GitHub
+                  p
+                // Image Section for MD and larger screens
+                .col-md-4.d-none.d-md-block
+                  a.image-link.col-md-4(href='assets/img medcare.jpg' target='_blank')
+                    .image-wrapper
+                      img.img-fluid.rounded(src='assets/img medcare.jpg' alt='Image 1')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+        // Set to modal-xl for Logistic
+        #imageModal3.modal.fade(tabindex='-1' aria-labelledby='imageModalLabel' aria-hidden='true')
+          .modal-dialog.modal-dialog-scrollable.modal-xl
+            .modal-content
+              .modal-header
+                h5#logisticsModalLabel.modal-title
+                  | Logistics Platform Overview:
+                  | Streamlining Freight Transport
+                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+              .modal-body
+                .text-center.mb-4
+                  h5.modal-title.text-primary.fw-bolder
+                    | Optimized Solutions for Carriers and
+                    | Shippers in Freight Logistics
+                  p.text-muted
+                    | A comprehensive platform that connects shippers with carriers,
+                    | ensuring efficient transport of goods.
+                .row.g-4
+                  .col-lg-6
+                    .bg-light.p-4.rounded-4
+                      h6.text-primary.fw-bolder
+                        i.bi.bi-truck
+                        |                                                 Carriers:
+                      ul.small.text-muted
+                        li
+                          | Submit offers on shipments and view all their scheduled deliveries
+                          | in a clear calendar interface.
+                        li
+                          | Manage fleet vehicles efficiently, with recommendations for the best
+                          | matches between vehicles and shipments.
+                        li
+                          | Access performance statistics and receive real-time notifications
+                          | for new shipment opportunities.
+                  .col-lg-6
+                    .bg-light.p-4.rounded-4
+                      h6.text-primary.fw-bolder
+                        i.bi.bi-box-seam
+                        |                                                 Shippers:
+                      ul.small.text-muted
+                        li
+                          | Post detailed shipment requests and receive offers from carriers,
+                          | with a recommendation system suggesting the best vehicles.
+                        li
+                          | Track shipment status at every stage and securely manage payments
+                          | and invoices.
+                        li
+                          | Benefit from tailored matches between shipments and available
+                          | vehicles, optimizing delivery efficiency.
+                p.text-center.text-muted.mb-4.mt-4
+                  | Explore the images below to discover the
+                  | platform&apos;s key features and user interface.
+                hr.border-muted
+                .row.g-4
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/logistics1.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics1.jpg' alt='Image 1')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/logistics9.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics9.jpg' alt='Image 2')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/logistics3.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics3.jpg' alt='Image 3')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/logistics4.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics4.jpg' alt='Image 4')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/logistics5.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics5.jpg' alt='Image 4')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/logistics6.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics6.jpg' alt='Image 5')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/logistics7.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics7.png' alt='Image 6')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/logistics8.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics8.png' alt='Image 7')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/logistics10.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics10.png' alt='Image 7')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/logistics12.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics12.png' alt='Image 7')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/logistics11.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/logistics11.png' alt='Image 7')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+              .modal-footer
+                button.btn.btn-dark(type='button' data-bs-dismiss='modal') Close
+        // Set to modal-xl for e-recrutement
+        #imageModal.modal.fade(tabindex='-1' aria-labelledby='imageModalLabel' aria-hidden='true')
+          .modal-dialog.modal-dialog-scrollable.modal-xl
+            .modal-content
+              .modal-header
+                h5#imageModalLabel.modal-title
+                  | E-Recruitment Platform Overview:
+                  | Streamlined Hiring Process
+                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+              .modal-body
+                .text-center.mb-4
+                  h5.modal-title.text-primary.fw-bolder
+                    | The E-Recruitment Platform Enhances
+                    | the Hiring Experience
+                  p.text-muted A collaborative effort for a better hiring experience.
+                .row.g-4
+                  .col-lg-6
+                    .bg-light.p-4.rounded-4
+                      h6.text-primary.fw-bolder
+                        i.bi.bi-person-fill
+                        |                                                 Job Seekers:
+                      ul.small.text-muted
+                        li
+                          | Create personalized profiles by uploading resumes and adding skills,
+                          | experiences, and certifications.
+                        li
+                          | Apply to multiple job listings with just a few clicks, tracking
+                          | application statuses easily.
+                        li
+                          | Set job alerts to be notified of new openings matching their
+                          | qualifications.
+                  .col-lg-6
+                    .bg-light.p-4.rounded-4
+                      h6.text-primary.fw-bolder
+                        i.bi.bi-briefcase-fill
+                        |                                                 Employers:
+                      ul.small.text-muted
+                        li
+                          | Post detailed job openings, specifying role requirements, skills
+                          | needed, and salary range.
+                        li
+                          | Receive applications and compare candidates, using filters to find
+                          | the best matches.
+                        li
+                          | Track the progress of the recruitment process, from shortlisting to
+                          | interviews and final decisions.
+                p.text-center.text-muted.mb-4.mt-4
+                  | Explore the images below to discover the
+                  | platform&apos;s key features and user interface.
+                hr.border-muted
+                .row.g-4
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/Home page.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/Home page 2.png' alt='Image 1')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/e-recrutement2.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/e-recrutement2.jpg' alt='Image 2')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/e-recrutement3.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/e-recrutement3.jpg' alt='Image 3')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/Find6job.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/Find6job.png' alt='Image 4')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/step1.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/step1.jpg' alt='Image 5')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/profile page.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/profile page.png' alt='Image 6')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/satatistique.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/satatistique.jpg' alt='Image 7')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+              .modal-footer
+                button.btn.btn-dark(type='button' data-bs-dismiss='modal') Close
+        // Set to modal-xl for e-health
+        #imageModal1.modal.fade(tabindex='-1' aria-labelledby='imageModalLabel' aria-hidden='true')
+          .modal-dialog.modal-dialog-scrollable.modal-xl
+            .modal-content
+              .modal-header
+                h5#imageModalLabel.modal-title
+                  | E-Health Platform Overview: Streamlines
+                  | Appointment Management
+                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+              .modal-body
+                .text-center.mb-4
+                  h5.modal-title.text-primary.fw-bolder
+                    | The eHealth Platform Enhances Access
+                    | to Medical Services and Appointment Scheduling
+                  p.text-muted A collaborative effort for enhanced healthcare experience.
+                .row.g-4
+                  .col-lg-6
+                    .bg-light.p-4.rounded-4
+                      h6.text-primary.fw-bolder
+                        i.bi.bi-person-fill
+                        |                                                 Doctors:
+                      ul.small.text-muted
+                        li
+                          | Effectively organize and oversee their schedules by prominently
+                          | displaying the available time slots for appointments.
+                        li Make it easy for patients to book appointments online.
+                        li
+                          | Enhance service efficiency and optimize their time and resources.
+                        li Receive notifications about patient appointments and updates.
+                  .col-lg-6
+                    .bg-light.p-4.rounded-4
+                      h6.text-primary.fw-bolder
+                        i.bi.bi-person-lines-fill
+                        |                                                 Patients:
+                      ul.small.text-muted
+                        li
+                          | Enjoy a seamless experience by booking appointments and viewing
+                          | services at their convenience.
+                        li Receive notifications for appointments and updates.
+                        li
+                          | Log medications with specific times and dates to ensure adherence.
+                        li Get timely reminders for each dose.
+                p.text-center.text-muted.mb-4.mt-4
+                  | Explore the images below to discover the
+                  | platform&apos;s key features and user interface.
+                hr.border-muted
+                .row.g-4
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/e-health1.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/e-health1.png' alt='Image 1')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/e-health6.png' target='_blank')
+                      img.img-fluid.rounded.custom-img(src='assets/e-health6.png' alt='Image 2')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/e-health2.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/e-health2.png' alt='Image 3')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/e-health3.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/e-health3.png' alt='Image 3')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/e-health4.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/e-health4.png' alt='Image 4')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/e-health5.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/e-health5.png' alt='Image 5')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+              .modal-footer
+                button.btn.btn-dark(type='button' data-bs-dismiss='modal') Close
+        // Set to modal-xl for madrasatic
+        #imageModal2.modal.fade(tabindex='-1' aria-labelledby='imageModalLabel' aria-hidden='true')
+          .modal-dialog.modal-dialog-scrollable.modal-xl
+            .modal-content
+              .modal-header
+                h5#imageModalLabel.modal-title
+                  | Madrasatic Platform Overview: Streamlines
+                  | the Reporting Process
+                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+              .modal-body
+                .text-center.mb-4
+                  h5.modal-title.text-primary.fw-bolder
+                    | The Madratic Platform Enhances
+                    | Reporting and Issue Resolution
+                  p.text-muted A collaborative effort for a better school environment.
+                .row.g-4
+                  .col-lg-4
+                    .bg-light.p-4.rounded-4
+                      h6.text-primary.fw-bolder
+                        i.bi.bi-person-fill
+                        |                                                 Student:
+                      p.small.text-muted
+                        | Students initiate the reporting process by
+                        | submitting detailed accounts of issues they encounter. Their input is
+                        | crucial for providing necessary context for resolution.
+                  .col-lg-4
+                    .bg-light.p-4.rounded-4
+                      h6.text-primary.fw-bolder
+                        i.bi.bi-file-earmark-text
+                        |                                                 Coordinator:
+                      p.small.text-muted
+                        | Coordinators review submitted reports, assessing
+                        | validity and relevance. They can validate, request further information,
+                        | or reject reports, ensuring the right issues are addressed.
+                  .col-lg-4
+                    .bg-light.p-4.rounded-4
+                      h6.text-primary.fw-bolder
+                        i.bi.bi-tools
+                        |                                                 Service Manager:
+                      p.small.text-muted
+                        | Service managers address issues highlighted in
+                        | validated reports, investigating problems and compiling comprehensive
+                        | reports on actions taken for resolution.
+                p.text-center.text-muted.mb-4.mt-4
+                  | Explore the images below to discover the
+                  | platform&apos;s key features and user interface.
+                hr.border-muted
+                .row.g-4
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/Home page.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/Home page 2.png' alt='Image 1')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/e-recrutement2.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/e-recrutement2.jpg' alt='Image 2')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/e-recrutement3.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/e-recrutement3.jpg' alt='Image 3')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-6.mb-3
+                    a.position-relative(href='assets/Find6job.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/Find6job.png' alt='Image 4')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/step1.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/step1.jpg' alt='Image 5')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/profile page.png' target='_blank')
+                      img.img-fluid.rounded(src='assets/profile page.png' alt='Image 6')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+                  .col-12.col-md-4.mb-3
+                    a.position-relative(href='assets/satatistique.jpg' target='_blank')
+                      img.img-fluid.rounded(src='assets/satatistique.jpg' alt='Image 7')
+                      .overlay
+                        i.fas.fa-eye
+                        |                                                 See Image
+              .modal-footer
+                button.btn.btn-dark(type='button' data-bs-dismiss='modal') Close
+  // Call to action section
+  section.py-5.bg-gradient-primary-to-secondary.text-white
+    .container.px-5.my-5
+      .text-center
+        h2.display-4.fw-bolder.mb-4 Let&apos;s build something together
+        a.btn.btn-outline-light.btn-lg.px-5.py-3.fs-6.fw-bolder(href='contact.html') Contact me
+// Footer
+footer.bg-white.py-4.mt-auto
+  .container.px-5
+    .row.align-items-center.justify-content-between.flex-column.flex-sm-row
+      .col-auto
+        .small.m-0 Copyright &copy; 2024 Chaouch Hanane | inspired by Start Bootstrap.
+    // Scroll to Top Button
+    a#scrollToTopBtn.scroll-to-top(href='#')
+      i.fas.fa-chevron-up
+// Bootstrap core JS
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+// Core theme JS
+script(src='js/scripts.js')
